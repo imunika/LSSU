@@ -1,0 +1,441 @@
+/* clears the 'X' from Internet Explorer */
+input[type="search"]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+input[type="search"]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+/* clears the 'X' from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+  /* background-image: url(https://subtlepatterns.com/patterns/kindajean.png); */
+  /* background-color: #f7f7f7; */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  position: relative;
+}
+
+.main-container {
+  min-height: 100vh; /* will cover the 100% of viewport */
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding-bottom: 100px; /* height of your footer */
+}
+
+.footer {
+  padding: 20px 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #3c3d41;
+  color: white;
+  text-align: center;
+}
+
+/* ---------------------------------------------------------------- */
+/* MENU         --------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+.bg-secondary {
+  background-color: #edeae6!important;
+  /* #e6dfdc !important; */
+}
+
+.navbar {
+  /* box-shadow: 0px 1px 10px #dedede; */
+  border-bottom: 0.1px solid #e1e1e1bd;
+}
+
+
+/* .layout-social .layout-icon {
+  font-size: 1.5em;
+} */
+/* ---------------------------------------------------------------- */
+/* BUTTONS      --------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+.btn-outline-success {
+  color: #000000;
+  border-color: transparent;
+}
+
+.btn-outline-success:hover,
+.btn-outline-success:active,
+.btn-outline-success:focus {
+  color: #000000;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.btn-outline-success:not(:disabled):not(.disabled).active,
+.btn-outline-success:not(:disabled):not(.disabled):active,
+.show > .btn-outline-success.dropdown-toggle {
+  color: #000000;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.btn-outline-success:not(:disabled):not(.disabled).active:focus,
+.btn-outline-success:not(:disabled):not(.disabled):active:focus,
+.show > .btn-outline-success.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(212, 71, 0, 0);
+}
+
+.btn.focus,
+.btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0);
+}
+
+.form-control:focus {
+  border-color: #fff;
+  box-shadow: 0 0 0 0.2rem rgba(212, 71, 0, 0);
+}
+
+/* back to top button */
+.btt {
+  display: none;
+  background: #d445004a;
+  width: 50px;
+  position: fixed;
+  right: -12px;
+  bottom: 10px;
+  z-index: 9998;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+
+.btt:hover {
+  background: #d44500;
+  box-shadow: 5px 10px 25px #555;
+}
+
+.btt i {
+  color: #ffffff4a;
+  font-size: 25px;
+  padding: 7px;
+}
+
+.btt i:hover {
+  color: #fff;
+}
+
+.icon {
+  font-size: 22px;
+  color: #8a8074;
+  padding: 4px;
+}
+
+.icon:hover {
+  color: #d44500;
+  /* box-shadow: 5px 10px 25px #555; */
+}
+
+/* ---------------------------------------------------------------- */
+/* FONTS         -------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+a.logofont {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+h2 {
+  /* font-family: 'Merriweather', serif;
+    font-weight: 300;
+    font-size: 23px; */
+  font-family: "garamond-premier-pro", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+}
+
+h3 {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-size: 80px;
+  /* color: rgb(255, 255, 255, .9); */
+}
+
+h4.card-title {
+  /* font-family: 'Merriweather', serif;
+    font-weight: 300;
+    font-size: 23px; */
+  font-family: "garamond-premier-pro", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+}
+
+/* h4 {
+        font-family:'webBradford-Regular';
+        font-weight: 400;
+        font-size: 100px;
+    } */
+
+h5 a,
+h5 a:hover,
+a:hover,
+a {
+  color: inherit; /* text-reset gets rid of the link's color*/
+  text-decoration: none; /* class text-decoration-none link won't be underlined*/
+}
+
+h6 {
+  font-family: "Crimson Text", serif;
+  font-weight: bold;
+  font-size: 22px;
+  color: #d44500;
+}
+
+/* ---------------------------------------------------------------- */
+/* CARDS       ---------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+.embed-responsive .card-img-top {
+  object-fit: cover;
+}
+
+.bg-light {
+  background-color: #f8f9fa !important; /* d5d3d0  */
+}
+
+.card {
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.01);
+  /*  transition: box-shadow 0.3s ease-in-out; */
+  /*  border:1px solid rgba(221, 221, 221, 0.137); */
+  /*  cursor: pointer; */
+  /*  border-radius: 4px; */
+}
+
+.card:hover {
+  box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.3);
+}
+
+h5.card-title {
+  font-family: "Crimson Text", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+}
+
+.card p {
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-size: 15px;
+  /* letter-spacing: 0.494px;
+    line-height: 17.94px; */
+}
+
+/* ---------------------------------------------------------------- */
+/* ESSAY        --------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+p.drop-cap:first-letter {
+  color: #d44500;
+  float: left;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
+hr.title {
+  border-top: 1px solid #919191;
+  margin-top: 10px;
+}
+
+hr.end {
+  border-top: 1px solid #d44500;
+}
+
+.essay p {
+  font-family: "Crimson Text", serif; /* 'Merriweateher', adobe-garamond-pro', 'garamond-premier-pro', 'webBradford-Regular', */
+  /* font-family: 'Piazzolla', serif; */
+  /* font-family: 'Source Serif Pro', serif; */
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 35px;
+  /* letter-spacing: 0.5px; */
+}
+
+p.by-author {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+}
+
+p.biography {
+  /* font-family: 'Lora', sans-serif; */
+  font-family: "Crimson Text", serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+p.essays,
+a.description {
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+p.sources {
+  font-family: "Crimson Text", serif;
+  /* font-weight: 400; */
+  /* font-family: 'Source Serif Pro', serif; */
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+sup {
+  /* font-family: 'Lora'; */
+  /* font-family: 'Source Serif Pro', serif; */
+  font-family: "Crimson Text", serif;
+  vertical-align: super;
+  font-size: 18px;
+  font-weight: 400;
+  /* margin-bottom: 2em; */
+  /* font-weight: bold; */
+}
+
+/* footnote with color */
+mark.orange {
+  color: #000000;
+  background: none;
+  font-weight: bolder;
+}
+
+h1.essay-title {
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-size: 50px;
+}
+
+/* Teresa's poems */
+.tab {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+a.by-author {
+  color: #d44500;
+  font-weight: bold;
+}
+
+.essay a {
+  color: #;
+  font-weight: bold;
+}
+
+a.anchor {
+  padding-top: 80px;
+  color: #d44500;
+}
+
+/* ---------------------------------------------------------------- */
+/* IMAGES       --------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+.figure-caption {
+  font-size: 11px;
+  color: rgb(102, 102, 102);
+}
+
+.carousel-indicators {
+  top: 0;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 10px;
+}
+
+.carousel-indicators .active {
+  background-color: white;
+}
+
+/* ---------------------------------------------------------------- */
+/* LIST OF ESSAYS ------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+
+.column {
+  float: left;
+  padding: 10px;
+  /*height: 300px;  Should be removed. Only for demonstration */
+}
+
+/* author to the left */
+.left {
+  width: 25%;
+}
+
+/* short essay description to the right */
+.right {
+  width: 75%;
+}
+
+/* Clear floats after the columns */
+/* .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  } */
+
+/* ---------------------------------------------------------------- */
+/* JUMBOTRON    --------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+
+.jumbotron {
+  background-color: #edeae6;
+  /* rgb(199, 177, 114, .3); = #c7b172; Jane Austen */
+  /* #edeae6; */
+  /* rgb(142, 93, 9) = #8e5d09; */
+  /* rgb(169, 163, 137, 0.4); #A9A389 el color XD */
+  /* eff2f5 eff2f5 edeae6 f4f1ef f7e8e0 e9ecef 67484d #9b3c2e #9c4b28 8e5d09 655c3d #665745 #756437 #854d0b */
+  border-radius: 0;
+  /* background:
+    radial-gradient(#854d0b 15%, transparent 16%) 0 0,
+    radial-gradient(#854d0b 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color:#854d0b; /* #282828 
+    background-size:16px 16px; */
+  /* background: linear-gradient(25deg, #D44500 1%, #fff 1%, #fff 49%, #D44500 49%, #D44500 51%, #fff 51%, #fff 99%, #D44500 99%);
+    background-size: 6px 6px;
+    background-position: 50px 50px; */
+}
+
+@media (min-width: 576px) {
+  .jumbotron {
+    padding: 2rem;
+  }
+}
