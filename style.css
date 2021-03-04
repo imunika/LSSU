@@ -370,10 +370,8 @@ a.by-author {
 }
 
 .essay a {
-  /* color: #;
-  font-weight: bold; */
   text-decoration: underline;
-  text-decoration-color: #ccc; 
+  text-decoration-color: #ccc;
 }
 
 .essay a:hover {
