@@ -167,6 +167,19 @@ a.logofont {
   font-size: 25px;
 }
 
+a.anylink {
+  /* font-weight: 600; */
+  /* color:#501b01; */
+  text-decoration: underline;
+  text-decoration-color: #ccc; 
+  /* #f8c7b6; */
+}
+
+a.anylink:hover {
+  color: #d44500;
+  cursor: pointer;
+}
+
 h2 {
   /* font-family: 'Merriweather', serif;
     font-weight: 300;
@@ -357,8 +370,14 @@ a.by-author {
 }
 
 .essay a {
-  color: #;
-  font-weight: bold;
+  /* color: #;
+  font-weight: bold; */
+  text-decoration: underline;
+  text-decoration-color: #ccc; 
+}
+
+.essay a:hover {
+  color:#d44500;
 }
 
 a.anchor {
