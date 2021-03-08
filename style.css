@@ -170,8 +170,11 @@ a.logofont {
 a.anylink {
   /* font-weight: 600; */
   /* color:#501b01; */
-  text-decoration: underline;
-  text-decoration-color: #ccc; 
+  /* color: #18254b; */
+  text-decoration-line: underline;
+  text-underline-offset: 2px;
+  /* text-decoration-color: #b1b8d3;  */
+  text-decoration-color: #e2aa8e; 
   /* #f8c7b6; */
 }
 
