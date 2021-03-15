@@ -390,9 +390,39 @@ a.anchor {
 /* ---------------------------------------------------------------- */
 /* IMAGES       --------------------------------------------------- */
 /* ---------------------------------------------------------------- */
+
+.figure {
+  display: table;
+  margin: 0;
+}
+
+.figure img {
+  max-width: 100%;
+}
+
+/* .figcaption {
+  display: table-caption;
+  caption-side: bottom;
+  background: pink;
+  padding: 10px;
+} */
+
 .figure-caption {
   font-size: 11px;
   color: rgb(102, 102, 102);
+  display: table-caption;
+  caption-side: bottom;
+  padding: 3px;
+}
+
+.carousel-caption {
+  position: relative;
+  top: 0;
+  left: 0;
+  color: rgb(102, 102, 102);
+  font-size: 11px;
+  text-align: left;
+  padding: 5px;
 }
 
 .carousel-indicators {
