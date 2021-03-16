@@ -184,6 +184,11 @@ a.anylink:hover {
   cursor: pointer;
 }
 
+a.anylink2:hover {
+  color: #d44500;
+  cursor: pointer;
+}
+
 h2 {
   /* font-family: 'Merriweather', serif;
     font-weight: 300;
