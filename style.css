@@ -546,3 +546,38 @@ a.backanchor {
   max-width: 1320px;
   }
 }
+
+/* --------------------------------
+Authors Section
+--------------------------------*/
+#authors {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+#authors .author-block {
+  background: #fff none repeat scroll 0 0;
+  padding: 30px 20px;
+  margin-bottom: 30px;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+#authors .author-block img {
+  height: 60px;
+  margin-bottom: 30px;
+  width: 60px;
+}
+
+#authors .author-block:hover {
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease-in-out 0s;
+}
+
+#authors .author-block h4 {
+  margin-bottom: 20px;
+}
+
+#authors .author-block p {
+  margin-bottom: 0;
+}
