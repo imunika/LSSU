@@ -172,7 +172,8 @@ a.anylink {
   /* color:#501b01; */
   /* color: #18254b; */
   text-decoration-line: underline;
-  text-underline-offset: 2px;
+  text-decoration-thickness: 0.75px;
+  text-underline-offset: 2.5px;
   /* text-decoration-color: #b1b8d3;  */
   text-decoration-color: #e2aa8e; 
   /* #f8c7b6; */
@@ -374,8 +375,10 @@ a.by-author {
 
 .essay a {
   text-decoration-line: underline;
-  text-decoration-color: #ccc;
-  text-underline-offset: 2px;
+  text-decoration-thickness: 0.75px;
+  /* text-decoration-color: #ccc; */
+  text-decoration-color: #e2aa8e; 
+  text-underline-offset: 2.5px;
 }
 
 .essay a:hover {
