@@ -385,6 +385,12 @@ a.by-author {
 a.anchor {
   padding-top: 80px;
   color: #d44500;
+  text-decoration-line: none;
+}
+
+a.backanchor {
+  color: #d44500;
+  text-decoration-line: none;
 }
 
 /* ---------------------------------------------------------------- */
