@@ -249,6 +249,7 @@ h6 {
 }
 
 .card {
+  /* box-shadow: 0px 0 35px 0 rgb(0 0 0 / 8%); */
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.01);
   /*  transition: box-shadow 0.3s ease-in-out; */
   /*  border:1px solid rgba(221, 221, 221, 0.137); */
@@ -399,6 +400,44 @@ a.anchor {
 a.backanchor {
   color: #d44500;
   text-decoration-line: none;
+}
+
+blockquote {
+  font-family: "Crimson Text", serif;
+  position: relative;
+  font-style: italic;
+  margin: 2em;
+  padding: 3em 5em 2em 6em;
+}
+/* Thanks: http://callmenick.com/post/styling-blockquotes-with-css-pseudo-classes */
+blockquote:before {
+  font-family: serif;
+  position: absolute;
+  font-size: 8em;
+  line-height: 1;
+  top: 0;
+  left: 0;
+  content: "\201C";
+  color: #ce9579;
+}
+blockquote:after {
+  font-family: serif;
+  position: absolute;
+  display: block; 
+  float:right;
+  font-size: 8em;
+  line-height: 1;
+  right:0;
+  bottom:-0.5em;
+  content: "\201D";
+  color: #ce9579;
+}
+blockquote footer {
+  padding: 0 2em 0 0;
+  text-align:right;
+}
+blockquote cite:before {
+  content: "\2013";
 }
 
 /* ---------------------------------------------------------------- */
@@ -574,10 +613,165 @@ Authors Section
   transition: all 0.5s ease-in-out 0s;
 }
 
-#authors .author-block h4 {
+#authors .author-block h2 {
   margin-bottom: 20px;
 }
 
 #authors .author-block p {
   margin-bottom: 0;
+}
+
+
+/*--------------------------------------------------------------
+# Gallery
+--------------------------------------------------------------*/
+.gallery .gallery-item {
+  margin-bottom: 30px;
+}
+
+.gallery #gallery-flters {
+  padding: 0;
+  margin: 0 auto 25px auto;
+  list-style: none;
+  text-align: center;
+  border-radius: 50px;
+}
+
+.gallery #gallery-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #444444;
+  margin-bottom: 5px;
+  transition: all 0.3s;
+}
+
+.gallery #gallery-flters li:hover, .gallery #gallery-flters li.filter-active {
+  color: #006fbe;
+}
+
+.gallery #gallery-flters li:last-child {
+  margin-right: 0;
+}
+
+.gallery .gallery-wrap {
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background: rgba(36, 50, 93, 0.6);
+}
+
+.gallery .gallery-wrap::before {
+  content: "";
+  background: rgba(36, 50, 93, 0.6);
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  top: 30px;
+  bottom: 30px;
+  transition: all ease-in-out 0.3s;
+  z-index: 2;
+  opacity: 0;
+}
+
+.gallery .gallery-wrap .gallery-info {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery .gallery-wrap .gallery-info::before {
+  display: block;
+  content: "";
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  border-top: 3px solid #fff;
+  border-left: 3px solid #fff;
+  transition: all 0.5s ease 0s;
+  z-index: 9994;
+}
+
+.gallery .gallery-wrap .gallery-info::after {
+  display: block;
+  content: "";
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  bottom: 35px;
+  right: 35px;
+  border-bottom: 3px solid #fff;
+  border-right: 3px solid #fff;
+  transition: all 0.5s ease 0s;
+  z-index: 9994;
+}
+
+.gallery .gallery-wrap .gallery-info h4 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.gallery .gallery-wrap .gallery-info p {
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+
+.gallery .gallery-wrap .gallery-links {
+  text-align: center;
+  z-index: 4;
+}
+
+.gallery .gallery-wrap .gallery-links a {
+  color: #fff;
+  margin: 0 2px;
+  font-size: 28px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.gallery .gallery-wrap .gallery-links a:hover {
+  color: #25a4ff;
+}
+
+.gallery .gallery-wrap:hover::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+}
+
+.gallery .gallery-wrap:hover .gallery-info {
+  opacity: 1;
+}
+
+.gallery .gallery-wrap:hover .gallery-info::before {
+  top: 15px;
+  left: 15px;
+}
+
+.gallery .gallery-wrap:hover .gallery-info::after {
+  bottom: 15px;
+  right: 15px;
 }
