@@ -31,6 +31,10 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   <script src="../scroll.js"></script>
 
+  <!-- GLightbox -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+
   <!-- Daniel - Gallery -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.10.0/css/lightgallery.min.css" integrity="sha512-gk6oCFFexhboh5r/6fov3zqTCA2plJ+uIoUx941tQSFg6TNYahuvh1esZVV0kkK+i5Kl74jPmNJTTaHAovWIhw==" crossorigin="anonymous" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
@@ -119,11 +123,17 @@
       </div>
       <hr class="title">
       <div class="my-5">
-        <figure class="figure">          
+        <!-- <figure class="figure">          
           <img id="MQRfig1" class="figure-img img-fluid" data-src="../img/essay/MonicaQuinonesRivera_essay2.jpg" src="../img/essay/MonicaQuinonesRivera_essay2.jpg" alt="Card image cap"
           data-sub-html="Roelandt Savery, <em>Birds and Beasts by a Stream</em>, 1636, oil on panel, Courtesy of Syracuse University Art Museum, 1993.118, gift of the B & L Foundation">
           <figcaption class="figure-caption">Roelandt Savery, <em>Birds and Beasts by a Stream</em>, 1636, oil on panel, Courtesy of Syracuse University Art Museum, 1993.118, gift of the B & L Foundation</figcaption>
-        </figure>
+        </figure> -->
+        <a href="../img/essay/MonicaQuinonesRivera_essay2.jpg" class="glightbox">
+          <figure class="figure">
+            <img class="figure-img img-fluid" src="../img/essay/MonicaQuinonesRivera_essay2.jpg" alt="image">
+            <figcaption class="figure-caption">Roelandt Savery, <em>Birds and Beasts by a Stream</em>, 1636, oil on panel, Courtesy of Syracuse University Art Museum, 1993.118, gift of the B & L Foundation</figcaption>
+          </figure>
+        </a>
       </div>
       <p class="drop-cap mt-5">Roelandt Savery was born in 1578, in Courtrai, located in the Southern Low Countries. Courtrai fell to the Spanish in 1580 and Roelandt Savery and his family were forced to evacuate north to the Dutch Republic. The family settled in Haarlem. By the late 1580s, Roelandt and one of his older brothers, Jacques (Jacob, 1565-1603) had moved to Amsterdam. Roelandt learned to paint from his brother who was a painter, draftsman, miniaturist, and engraver. Jacques himself likely trained under Hans Bol (1534-1593), a Flemish artist.</p>
       <p>Shortly after Jacques’ death from the plague in 1603, Roelandt left Amsterdam and migrated to Prague where he worked as a landscape painter for Emperor Rudolf II (1552-1612), Holy Roman Emperor and King of Hungary and Bohemia. Rudolf II was renowned for his extensive menageries. From 1606 to 1607, Roelandt was sent to the Tyrolean Alps to document their beauty. The artist’s travels in the Alps exerted a significant influence on the artist, such that many of his extant paintings are Alpine landscapes. Furthermore, Roelandt’s access to the emperor’s menageries explains the abundance of exotic animals in his paintings. Roelandt also worked for the emperor’s successor, Matthias (1557-1619). By 1616, Savery had returned to Amsterdam and, after the death of his sister-in-law, the artist settled in Utrecht to take care of his older brother’s orphaned children.</p>
@@ -170,5 +180,8 @@
 
 <a class="btt" href="#"><i class="fa fa-arrow-circle-up"></i></a>
 
+<script type="text/javascript">
+  const lightbox = GLightbox({});
+</script>
 </body>
 </html>

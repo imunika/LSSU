@@ -409,7 +409,7 @@ blockquote {
   margin: 2em;
   padding: 3em 5em 2em 6em;
 }
-/* Thanks: http://callmenick.com/post/styling-blockquotes-with-css-pseudo-classes */
+
 blockquote:before {
   font-family: serif;
   position: absolute;
