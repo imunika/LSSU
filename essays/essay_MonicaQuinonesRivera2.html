@@ -130,26 +130,11 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-sm">
-    </div>      
-    <div class="col-sm-9 mt-4">
-<!-- <div class="my-5"> -->
-        <!-- <figure class="figure">          
-          <img id="MQRfig1" class="figure-img img-fluid" data-src="../img/essay/MonicaQuinonesRivera_essay2.jpg" src="../img/essay/MonicaQuinonesRivera_essay2.jpg" alt="Card image cap"
-          data-sub-html="Roelandt Savery, <em>Birds and Beasts by a Stream</em>, 1636, oil on panel, Courtesy of Syracuse University Art Museum, 1993.118, gift of the B & L Foundation">
-          <figcaption class="figure-caption">Roelandt Savery, <em>Birds and Beasts by a Stream</em>, 1636, oil on panel, Courtesy of Syracuse University Art Museum, 1993.118, gift of the B & L Foundation</figcaption>
-        </figure> -->
-      <a href="../img/essay/MonicaQuinonesRivera_essay2.jpg" class="glightbox">
+    <div class="col-sm-9 mt-4 mx-auto">
         <figure class="figure">
-          <img class="figure-img img-fluid" src="../img/essay/MonicaQuinonesRivera_essay2.jpg" alt="image">
-          <figcaption class="figure-caption">Roelandt Savery, <em>Birds and Beasts by a Stream</em>, 1636, oil on panel, Courtesy of Syracuse University Art Museum, 1993.118, gift of the B & L Foundation</figcaption>
+          <img id="thegallery" class="figure-img img-fluid" src="../img/essay/MonicaQuinonesRivera_essay2.jpg" alt="image">
+          <figcaption class="figure-caption"></figcaption>
         </figure>
-        <div class="glightbox-desc custom-desc1">
-          <p>Roelandt Savery, <em>Birds and Beasts by a Stream</em>, 1636, oil on panel, Courtesy of Syracuse University Art Museum, 1993.118, gift of the B & L Foundation</p>
-        </div>
-      </a>
-    </div>
-    <div class="col-sm">
     </div>
   </div>
 </div>
@@ -205,7 +190,23 @@
 <a class="btt" href="#"><i class="fa fa-arrow-circle-up"></i></a>
 
 <script type="text/javascript">
-  const lightbox = GLightbox({});
+ 
+  const myGallery = GLightbox({
+    openEffect: 'zoom',
+    closeEffect: 'fade',
+    elements: [
+        {
+            'href': '../img/essay/MonicaQuinonesRivera_essay2.jpg',
+            'type': 'image',
+            'title': '',
+            'description': 'Roelandt Savery, <em>Birds and Beasts by a Stream</em>, 1636, oil on panel. Courtesy of Syracuse University Art Museum, 1993.118, gift of the B & L Foundation.',
+        }
+    ],
+  });
+  $("#thegallery").click(() => myGallery.open());
+  $("#thegallery").siblings("figcaption").hide().html(() => myGallery.elements[0]['description']).fadeIn();
+  
 </script>
+
 </body>
 </html>

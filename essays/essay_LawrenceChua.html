@@ -30,6 +30,10 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   <script src="../scroll.js"></script>
+
+  <!-- GLightbox -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
   
 </head>
 <body>
@@ -64,9 +68,7 @@
 
 <div class="container mt-4 essay">
   <div class="row">
-    <div class="col-sm">
-    </div>
-    <div class="col-sm-9">
+    <div class="col-sm-9 mx-auto">
       <h1 class="essay-title my-4">Bangkok Utopia: Buddhist Felicities, Modern Architecture and Landscape</h1>
       <div class="container">
         <div class="row">
@@ -84,28 +86,25 @@
         </div>
       </div>
       <hr class="title">
-      <!-- <hr class="title">
-      <p class="mb-2 by-author">By <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Lawrence Chua</a></p>
-      <div class="collapse" id="collapseExample">
-          <div class="card card-body">
-              <div class="row">
-                  <div class="column left">
-                      <img src="../img/speaker/LawrenceChua_bio.jpg" class = "img-responsive" width = "100%">
-                  </div>
-                  <div class="column right">
-                      <p class="mb-2 biography">Lawrence Chua is an assistant professor of architectural history in the School of Architecture, Syracuse University. He is currently a scholar in residence at the Getty Research Institute (2020-2021). He has been a research fellow at the International Institute of Asian Studies at the Universiteit Leiden and a Marie S. Curie Fellow at the Freiburg Institute of Advanced Studies at the Albert-Ludwigs-Universität. His writing has appeared in the <em>Journal of the Society of Architectural Historians</em>, <em>Journal of Urban History</em>, <em>Journal of Architecture</em>, <em>Oxford Art Journal</em>, and <em>Southeast of Now</em>.</p>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <hr> -->
-      <div class="my-5">
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9 mt-4 mx-auto">
         <figure class="figure">
-          <img class="figure-img img-fluid" src="../img/essay/LawrenceChua_Muang Thai cover 2.jpg" alt="Card image cap">
-          <figcaption class="figure-caption">Cover of the special issue of <em>Muang Thai</em> pictorial magazine, celebrating Constitution Day, 1941; courtesy of the Government Department of Public Relations, Thailand. From, Lawrence Chua, <em>Bangkok Utopia: Modern Architecture and Buddhist Felicities</em>, 1910-1973 (Honolulu: University of Hawai'i Press, 2021).</figcaption>
+          <img id="thegallery" class="figure-img img-fluid" src="../img/essay/LawrenceChua_MuangThai.jpg" alt="image">
+          <figcaption class="figure-caption"></figcaption>
         </figure>
-      </div>
-      <p class="drop-cap">My first scholarly monograph, which is based on over a decade of archival and field research, extends the conversation on Buddhist landscapes and mnemoscapes undertaken in religious studies, cultural geography, and cultural history by scholars like Anne Blackburn, James Duncan, and Maurizio Peleggi into the realm of modern architectural and urban history. It examines narratives and images of utopia and the felicitous realms of the Pali imaginaire that developed in the Thai capital, Bangkok from 1910 until 1973.<sup><a href="#fn1" id="ref1" class="anchor">1</a></sup> <em>Bangkok Utopia: Modern Architecture and Buddhist Felicities, 1910-1973</em>, draws on over a decade of archival research and will be published by the University of Hawai’i Press’ Spatial Habitus series. The book follows a loose chronology from early 20th-century absolutism, through the paradoxical rise of constitutional democracy and military dictatorship in the mid-20th-century, to the emergence of a regime of “development” in the post-war period. Together, these three parts mirror the trajectory of ideas in the architect’s studio, from their conceptualization as drawings, models, and plans to their material realization in steel, concrete, and glass, to the ways they sit within larger urban, national, and global networks and ultimately engage with their users.</p>
+    </div>
+  </div>
+</div>
+
+<div class="container essay">
+  <div class="row">
+    <div class="col-sm-9 mx-auto">     
+      <p class="drop-cap mt-5">My first scholarly monograph, which is based on over a decade of archival and field research, extends the conversation on Buddhist landscapes and mnemoscapes undertaken in religious studies, cultural geography, and cultural history by scholars like Anne Blackburn, James Duncan, and Maurizio Peleggi into the realm of modern architectural and urban history. It examines narratives and images of utopia and the felicitous realms of the Pali imaginaire that developed in the Thai capital, Bangkok from 1910 until 1973.<sup><a href="#fn1" id="ref1" class="anchor">1</a></sup> <em>Bangkok Utopia: Modern Architecture and Buddhist Felicities, 1910-1973</em>, draws on over a decade of archival research and will be published by the University of Hawai’i Press’ Spatial Habitus series. The book follows a loose chronology from early 20th-century absolutism, through the paradoxical rise of constitutional democracy and military dictatorship in the mid-20th-century, to the emergence of a regime of “development” in the post-war period. Together, these three parts mirror the trajectory of ideas in the architect’s studio, from their conceptualization as drawings, models, and plans to their material realization in steel, concrete, and glass, to the ways they sit within larger urban, national, and global networks and ultimately engage with their users.</p>
       <p>“Utopia” is a word not often associated with the city of Bangkok, which is better known for its disorderly sprawl, overburdened roads, and stifling levels of pollution. Yet as early as 1782, when the city was officially founded on the banks of the Chao Phraya river as the home of the Chakri dynasty, its orientation was based on material and rhetorical considerations that alluded to ideal times and spaces. The construction of palaces, monastic complexes, walls, forts, and canals created a defensive network while symbolically locating the terrestrial realm of the king within the Theravada Buddhist cosmos. Into the twentieth century, pictorial, narrative, and built representations of utopia were critical to Bangkok’s transformation into a national capital and commercial entrepôt. But as older representations of the universe encountered modern architecture, building technologies, and urban planning, new images of an ideal society attempted to reconcile urban-based understandings of Buddhist liberation and felicitous states like nirvana with worldly models of political community like the nation-state.<sup><a href="#fn2" id="ref2" class="anchor">2</a></sup></p>
       <p><em>Bangkok Utopia</em> outlines an alternative genealogy of both utopia and modernism in a part of the world that has often been overlooked by researchers of both. It examines representations of utopia that developed in the city—as expressed in built forms as well as architectural drawings, building manuals, novels, poetry, and ecclesiastical murals—from its first general strike of migrant laborers in 1910 to the overthrow of the military dictatorship in 1973.  Using Thai- and Chinese-language archival sources, the book demonstrates how the new spaces of the city became arenas for modern subject formation, utopian desires, political hegemony, and social unrest, arguing that the modern city was a space of antinomy—one able not only to sustain heterogeneous temporalities, but also to support conflicting world views within the urban landscape. By underscoring the paradoxical character of utopias and their formal narrative expressions of both hope and hegemony, <em>Bangkok Utopia</em> provides an innovative way to conceptualize the uneven economic development and fractured political conditions of contemporary global cities.</p>
       <p><em>Aims, theoretical framework, and methodology of the project</em></p>
@@ -127,8 +126,6 @@
       <sup id="fn9"><mark class="orange">9</mark>. Donald K. Swearer, “The Northern Thai City as a Sacred Center,” Ibid., 104.<a href="#ref9" title="Jump back to footnote ix in the text." class="backanchor">&#8617</a></sup><br>        
       <br>
       <br>
-  </div>
-    <div class="col-sm">
     </div>
   </div>
 </div>
@@ -165,6 +162,25 @@
 </footer>
 
 <a class="btt" href="#"><i class="fa fa-arrow-circle-up"></i></a>
+
+<script type="text/javascript">
+ 
+  const myGallery = GLightbox({
+    openEffect: 'zoom',
+    closeEffect: 'fade',
+    elements: [
+        {
+            'href': '../img/essay/LawrenceChua_MuangThai.jpg',
+            'type': 'image',
+            'title': '',
+            'description': 'Cover of the special issue of <em>Muang Thai</em> pictorial magazine, celebrating Constitution Day, 1941; courtesy of the Government Department of Public Relations, Thailand. From, Lawrence Chua, <em>Bangkok Utopia: Modern Architecture and Buddhist Felicities</em>, 1910&#8209;1973 (Honolulu: University of Hawai&apos;i Press, 2021).',
+        }
+    ],
+  });
+  $("#thegallery").click(() => myGallery.open());
+  $("#thegallery").siblings("figcaption").hide().html(() => myGallery.elements[0]['description']).fadeIn();
+  
+</script>
 
 </body>
 </html>

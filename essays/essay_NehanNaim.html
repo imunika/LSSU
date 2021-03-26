@@ -30,6 +30,10 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   <script src="../scroll.js"></script>
+
+  <!-- GLightbox -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
   
 </head>
 <body>
@@ -64,9 +68,7 @@
   
 <div class="container mt-4 essay">
   <div class="row">
-    <div class="col-sm">
-    </div>
-    <div class="col-sm-9">
+    <div class="col-sm-9 mx-auto">
       <h1 class="essay-title my-4">All Things Fish</h1>
       <div class="container">
         <div class="row">
@@ -84,42 +86,36 @@
         </div>
       </div>
       <hr class="title">
-    </div>  
-    <div class="col-sm">
     </div>
   </div>
 </div>
 
 <div class="container">
   <div class="row">
-    <div class="col-sm">
-    </div>
-    <div class="mt-4 mb-5">
-      <figure class="figure">
-        <img class="figure-img img-fluid" src="../img/essay/NehanNaim_Salmon Fishing in the Yemen, 2007.png" alt="Card image cap">
-        <figcaption class="figure-caption">Salmon Fishing in the Yemen, 2007.</figcaption>
-      </figure>
-    </div>
-    <div class="col-sm">
+    <div class="col-sm-9 mt-4 mx-auto">
+        <figure class="figure">
+          <img id="thegallery" class="figure-img img-fluid" src="../img/essay/NehanNaim_SalmonFishingInTheYemen.png" alt="image">
+          <figcaption class="figure-caption"></figcaption>
+        </figure>
     </div>
   </div>
 </div>
 
-
-<div class="container essay">
+<div class="container essay mt-4">
   <div class="row">
-    <div class="col-sm">
-    </div>
-    <div class="col-sm-9">
-      <p style="text-align:center"><em>‘Sheikh: …..It will be a miracle of God if it were to happen. Your expertise and my money are not alone enough, I know. But just as Moses found water in the wilderness, if God wills it, fish will swim in the Wadi Aleyn.</em></p>
-      <p style="text-align:center"><em>Fred: I’m more of a facts and figures man, I’m afraid.</em></p>
-      <p style="text-align:center"><em>Sheikh: You are not a religious man?</em></p>
-      <p style="text-align:center"><em>Fred: No. No, I’m not.</em></p>
-      <p style="text-align:center"><em>Sheikh: But you are a fisherman.</em></p>
-      <p style="text-align:center"><em>Fred: I don’t quite follow.</em></p>
-      <p style="text-align:center"><em>Sheikh: How many hours do you fish before you catch something. Dozens?</em></p>
-      <p style="text-align:center"><em>Fred: Gosh, hundreds, sometimes.</em></p>
-      <p style="text-align:center"><em>Sheikh: Is that not a bad use of your time? For a facts and figures man?...........But you persist in the wind and the rain and the cold with such poor odds of success. Why? Because you are a man of faith, Dr. Alfred. And in the end you are rewarded for your faith and constancy. With a fish!’</em></p>        
+    <div class="col-sm-9 mx-auto">
+      <blockquote>
+        <p style="text-align:center"><em>Sheikh: … It will be a miracle of God if it were to happen. Your expertise and my money are not alone enough, I know. But just as Moses found water in the wilderness, if God wills it, fish will swim in the Wadi Aleyn.</em></p>
+        <p style="text-align:center"><em>Fred: I’m more of a facts and figures man, I’m afraid.</em></p>
+        <p style="text-align:center"><em>Sheikh: You are not a religious man?</em></p>
+        <p style="text-align:center"><em>Fred: No. No, I’m not.</em></p>
+        <p style="text-align:center"><em>Sheikh: But you are a fisherman.</em></p>
+        <p style="text-align:center"><em>Fred: I don’t quite follow.</em></p>
+        <p style="text-align:center"><em>Sheikh: How many hours do you fish before you catch something. Dozens?</em></p>
+        <p style="text-align:center"><em>Fred: Gosh, hundreds, sometimes.</em></p>
+        <p style="text-align:center"><em>Sheikh: Is that not a bad use of your time? For a facts and figures man?...........But you persist in the wind and the rain and the cold with such poor odds of success. Why? Because you are a man of faith, Dr. Alfred. And in the end, you are rewarded for your faith and constancy. With a fish!</em></p>
+      </blockquote>
+      <p class="pb-5 mt-n5" style="text-align:center; font-size:17px; color:dimgray">&mdash;Salmon Fishing in the Yemen, 2007</p>
       <hr>
       <br>
       <p class="drop-cap">Saving faith for another time (literally), I pursue Dr. Alfred’s science, and my recent work involves reconciling facts, figures and fish (markets). By understanding participants’ behavior and the relevant public efforts, the larger goal of this research is to optimize market design that best facilitates the trade and consumption of sustainable species, and support fishing communities that are most vulnerable to climate change. Fish markets are also one of the most unassuming representations of a society/region. Very rarely do fish markets (wholesale) attract those outside of the business; hence through the unadulterated market enthusiasm it is possible to get a glimpse of the culture and the people they epitomize. I am interested in both the economics and sociology of fish markets, and their crossroads.</p>
@@ -138,8 +134,6 @@
       <p>Switching to the supply side, developing countries’ fish markets offer a fascinating divide in labor across ethnic, gender, and sectarian lines. While women’s participation is largely limited to low valued activities in the fishing supply chain, fishing communities have come to organize themselves distinctively, both socially and geographically. I am studying the impact of climate change, regulations, and ‘redevelopment’ of fish markets in South Asia, as they affect the diverse stakeholders in the fishing business and reshape buyer-seller relationships. I am interested in the evolution of the economic status of specialized groups in both the artisanal and the formal fishing sectors, with the aim of recommending market designs that lend resilience and sustainability.</p>
       <br>
       <br>
-    </div>
-    <div class="col-sm">
     </div>
   </div>
 </div>
@@ -171,6 +165,25 @@
 </footer>
 
 <a class="btt" href="#"><i class="fa fa-arrow-circle-up"></i></a>
+
+<script type="text/javascript">
+ 
+  const myGallery = GLightbox({
+    openEffect: 'zoom',
+    closeEffect: 'fade',
+    elements: [
+        {
+            'href': '../img/essay/NehanNaim_SalmonFishingInTheYemen.png',
+            'type': 'image',
+            'title': '',
+            'description': 'Salmon Fishing in the Yemen, 2007.',
+        }
+    ],
+  });
+  $("#thegallery").click(() => myGallery.open());
+  $("#thegallery").siblings("figcaption").hide().html(() => myGallery.elements[0]['description']).fadeIn();
+  
+</script>
 
 </body>
 </html>

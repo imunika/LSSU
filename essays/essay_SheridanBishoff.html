@@ -30,7 +30,11 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   <script src="../scroll.js"></script>
-  
+
+  <!-- GLightbox -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+      
 </head>
 <body>
   
@@ -64,9 +68,7 @@
 
 <div class="container mt-4 essay">
   <div class="row">
-    <div class="col-sm">
-    </div>
-    <div class="col-sm-9">
+    <div class="col-sm-9 mx-auto">
       <h1 class="essay-title my-4">Imagined Nature</h1>
       <div class="container">
         <div class="row">
@@ -84,12 +86,24 @@
         </div>
       </div>
       <hr class="title">
-      <div class="my-5">
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9 mt-4 mx-auto">
         <figure class="figure">
-          <img class="figure-img img-fluid" src="../img/essay/SheridanBishoff_essay.jpg" alt="Card image cap">
-          <figcaption class="figure-caption">Rachel Ruysch, <em>Floral Still Life</em>, 1686, oil on canvas, <a href="https://magart.rochester.edu/objects-1/info/4138" target="_blank">Memorial Art Gallery</a>, University of Rochester, 1982.9. Acquired with contributions made in memory of Brenda Rowntree by her friends, through the Acquisition Fund of the Women's Council, and the Marion Stratton Gould Fund.</figcaption>
+          <img id="thegallery" class="figure-img img-fluid" src="../img/essay/SheridanBishoff_FloralStillLife.jpg" alt="image">
+          <figcaption class="figure-caption"></figcaption>
         </figure>
-      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container essay">
+  <div class="row">
+    <div class="col-sm-9 mx-auto">     
       <p class="drop-cap mt-5">Established in the early seventeenth-century Netherlands, still life became an independent genre of painting. Originally, religion shaped the subject matter, such as the representation of the Virgin Mary’s purity in vases of flowers. However, Rachel Ruysch (Dutch 1664/1665-1750) looked to science rather than religion to inspire her <em>Floral Still-Life</em> (1686).<sup><a href="#fn1" id="ref1" class="anchor">1</a></sup> Ruysch was the daughter of renowned botanist, physician, and anatomist, Dr. Frederick Ruysch (1638-1731). It is likely that her father’s research activities, in addition to his famed botanical gardens, inspired the artist’s work. Ruysch’s interest in science is evident in her paintings, as indicated by the frequent motifs of frogs, snails, snakes, cricket, butterfly, and flora. Ruysch also found influence in the work still-life painter, Otto Marseus van Schrieck (1619-1678), who is known for his representations of the forest-floor. While Ruysch’s still lifes seem true to nature, they are actually artificial. They draw from individual studies and the work of other painters, rather than direct observation.</p>
       <p>Ruysch’s compositions may present the theatrics of nature in an authentic context but they depict an altered reality. Art historian, Marianne Berardi, interprets the still life through the metaphor of scientific specimens. During the seventeenth century, Dr. Ruysch’s samples were not placed in sterile displays but in fanciful ones, often arranged with a romantic narrative or decoration rather than scientific objectivity.<sup><a href="#fn2" id="ref2" class="anchor">2</a></sup> In a similar interpretation, Berardi considers Ruysch’s <em>Floral Still-Life</em> to represent preserved botanical and zoological objects within the container of a landscape.<sup><a href="#fn3" id="ref3" class="anchor">3</a></sup> The water, rocks, and ground all serve as framing devices for the specimens within. Botanist and art historian Sam Segal similarly views the purpose of still life to “depict reality in an imaginary setting.”<sup><a href="#fn4" id="ref4" class="anchor">4</a></sup></p>
       <p>Berardi offers an insightful metaphor, but the inclusion of flowers that bloom in different seasons subverts her interpretation. The botanically impossible bouquet in Ruysch’s <em>Floral Still-Life</em> consists of a white rose, cabbage rose, poppy anemone, morning glory, and white lily. While the flora depicted look natural, they represent an altered reality. Most of the flowers in the composition are foreign to Holland.<sup><a href="#fn5" id="ref5" class="anchor">5</a></sup> Berardi also notes that lilies do not typically grow from elder trees just as the improbable collection of flowers do not bloom simultaneously.<sup><a href="#fn6" id="ref6" class="anchor">6</a></sup> She believes that the composition refers directly to <em>Flowers and Amphibians near a Pool of Water</em> (1660) by Abraham Mignon (Dutch 1640-1679).<sup><a href="#fn7" id="ref7" class="anchor">7</a></sup> Ruysch repeats the right side of Mignon’s composition, selectively copying what interests her most, like the oversized elder tree in decay. The truth of composition is that it is not looking to create a natural world, but something artistically produced.</p>
@@ -106,8 +120,6 @@
       <sup id="fn8"><mark class="orange">8</mark>. Berardi, 286; Segal (1990), 227.<a href="#ref8" title="Jump back to footnote 8 in the text." class="backanchor">&#8617</a></sup><br>
       <br>
       <br>
-  </div>
-    <div class="col-sm">
     </div>
   </div>
 </div>
@@ -144,6 +156,25 @@
 </footer>
 
 <a class="btt" href="#"><i class="fa fa-arrow-circle-up"></i></a>
+
+<script type="text/javascript">
+ 
+  const myGallery = GLightbox({
+    openEffect: 'zoom',
+    closeEffect: 'fade',
+    elements: [
+        {
+            'href': '../img/essay/SheridanBishoff_FloralStillLife.jpg',
+            'type': 'image',
+            'title': '',
+            'description': 'Rachel Ruysch, <em>Floral Still Life</em>, 1686, oil on canvas, <a class="anylink" href="https://magart.rochester.edu/objects-1/info/4138" target="_blank" rel="noopener noreferrer">Memorial Art Gallery</a>, University of Rochester, 1982.9. Acquired with contributions made in memory of Brenda Rowntree by her friends, through the Acquisition Fund of the Women&apos;s Council, and the Marion Stratton Gould Fund.',
+        }
+    ],
+  });
+  $("#thegallery").click(() => myGallery.open());
+  $("#thegallery").siblings("figcaption").hide().html(() => myGallery.elements[0]['description']).fadeIn();
+  
+</script>
 
 </body>
 </html>

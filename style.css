@@ -434,7 +434,7 @@ blockquote:after {
 }
 blockquote footer {
   padding: 0 2em 0 0;
-  text-align:right;
+  text-align:center;
 }
 blockquote cite:before {
   content: "\2013";
@@ -444,13 +444,20 @@ blockquote cite:before {
 /* IMAGES       --------------------------------------------------- */
 /* ---------------------------------------------------------------- */
 
-.figure {
+/* .figure {
   display: table;
   margin: 0;
-}
+} */
 
 .figure img {
   max-width: 100%;
+}
+
+/* center figure */
+.figure {
+  display: table;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /* .figcaption {
@@ -466,6 +473,21 @@ blockquote cite:before {
   display: table-caption;
   caption-side: bottom;
   padding: 3px;
+}
+.figure img:hover {
+  cursor: pointer;
+}
+
+.figure:hover::after{
+  content: '';
+  position: absolute;
+  left: 40%;
+  top: 0;
+  bottom: 80%;
+  width: 100%;
+  background: url('../img/expand.png') center no-repeat;
+  background-size: 80px;
+  opacity: 0.5;
 }
 
 .carousel-caption {
@@ -512,7 +534,7 @@ blockquote cite:before {
 }
 
 .carousel-indicators .active {
-  background-color: #fff;
+  background-color: #fff;   
   /* background-color:#8a8074; */
 }
 
@@ -521,7 +543,20 @@ blockquote cite:before {
   width: 50px;
   height: 50px;
   /* background: no-repeat 50%/100% 100%; */
-} 
+}
+
+/* .carousel-item:hover:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background: url('../img/expand.png') center no-repeat;
+  background-size: 80px;
+  opacity: 0.5;
+  cursor: pointer;
+} */
 
 /* ---------------------------------------------------------------- */
 /* LIST OF ESSAYS ------------------------------------------------- */
@@ -625,7 +660,7 @@ Authors Section
 /*--------------------------------------------------------------
 # Gallery
 --------------------------------------------------------------*/
-.gallery .gallery-item {
+/* .gallery .gallery-item {
   margin-bottom: 30px;
 }
 
@@ -774,4 +809,4 @@ Authors Section
 .gallery .gallery-wrap:hover .gallery-info::after {
   bottom: 15px;
   right: 15px;
-}
+} */
