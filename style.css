@@ -486,7 +486,7 @@ blockquote cite:before {
   top: 0;
   bottom: 0;
   width: 100%;
-  background: url('/img/expand.png') center no-repeat;
+  background: url('img/expand.png') center no-repeat;
   background-size: 80px;
   opacity: 0.5;
   cursor: pointer;
@@ -555,7 +555,7 @@ blockquote cite:before {
   top: 0;
   bottom: 0;
   width: 100%;
-  background: url('/img/expand.png') center no-repeat;
+  background: url('img/expand.png') center no-repeat;
   background-size: 80px;
   opacity: 0.5;
   cursor: pointer;
