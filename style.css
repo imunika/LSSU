@@ -474,9 +474,10 @@ blockquote cite:before {
   caption-side: bottom;
   padding: 3px;
 }
-/* .figure img:hover {
+
+.figure img:hover {
   cursor: pointer;
-} */
+}
 
 .figure:hover::after{
   content: '';
