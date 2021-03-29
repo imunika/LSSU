@@ -95,38 +95,32 @@
 </div>
 
 <div class="top-content">
-  <div class="container mt-5">
+  <div class="container-fluid mt-5">
     <div class="row">
       <div class="col-sm-9 mx-auto">
         <!-- Carousel -->
         <div id="carousel-example" class="carousel slide" data-ride="carousel" data-interval="false">
-          <ol class="carousel-indicators">
-              <!-- <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
-              <li data-target="#carousel-example" data-slide-to="1"></li>
-              <li data-target="#carousel-example" data-slide-to="2"></li>
-              <li data-target="#carousel-example" data-slide-to="3"></li> -->
-          </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="../img/essay/EmilyDuke_and_CooperBattersby_YWA_kittens.jpeg" class="d-block w-100" alt="slide-img-1">
+              <img src="../img/essay/EmilyDuke_and_CooperBattersby_YWA_kittens.jpeg" data-src="../img/essay/EmilyDuke_and_CooperBattersby_YWA_kittens.jpeg" class="d-block w-100" alt="slide-img-1">
               <div class="carousel-caption d-none d-md-block">
                 <p>Duke and Battersby, video still, <em>You Were an Amazement on the Day You Were Born</em>, 2019.</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="../img/essay/EmilyDuke_and_CooperBattersby_YWA_wasp.jpeg" class="d-block w-100" alt="slide-img-2">
+              <img src="../img/essay/EmilyDuke_and_CooperBattersby_YWA_wasp.jpeg" data-src="../img/essay/EmilyDuke_and_CooperBattersby_YWA_wasp.jpeg" class="d-block w-100" alt="slide-img-2">
               <div class="carousel-caption d-none d-md-block">
                 <p>Duke and Battersby, video still, <em>You Were an Amazement on the Day You Were Born</em>, 2019.</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="../img/essay/EmilyDuke_and_CooperBattersby_YWA_prairie_dogs_lilies.jpeg" class="d-block w-100" alt="slide-img-3">
+              <img src="../img/essay/EmilyDuke_and_CooperBattersby_YWA_prairie_dogs_lilies.jpeg" data-src="../img/essay/EmilyDuke_and_CooperBattersby_YWA_prairie_dogs_lilies.jpeg" class="d-block w-100" alt="slide-img-3">
               <div class="carousel-caption d-none d-md-block">
                 <p>Duke and Battersby, video still, <em>You Were an Amazement on the Day You Were Born</em>, 2019.</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="../img/essay/EmilyDuke_and_CooperBattersby_YWA_raccoon.jpeg" class="d-block w-100" alt="slide-img-4">
+              <img src="../img/essay/EmilyDuke_and_CooperBattersby_YWA_raccoon.jpeg" data-src="../img/essay/EmilyDuke_and_CooperBattersby_YWA_raccoon.jpeg" class="d-block w-100" alt="slide-img-4">
               <div class="carousel-caption d-none d-md-block">
                 <p>Duke and Battersby, video still, <em>You Were an Amazement on the Day You Were Born</em>, 2019.</p>
               </div>
@@ -150,9 +144,7 @@
 
 <div class="container mt-4 essay">
   <div class="row">
-    <div class="col-sm">
-    </div>
-    <div class="col-sm-9">
+    <div class="col-sm-9 mx-auto">
       <p class="drop-cap mt-4"><em>You Were an Amazement on the Day You Were Born</em> is a visually rich film that follows a woman through a life characterized by damage and loss, but in which she finds humor, love, and joy. With a score that follows the span of Lenore’s life, from her birth in the early 70s to her death in the 2040s, the film takes us from moments of harrowing loss to those of poignancy and dark humor.  Her life is told through voice over, narrated by performers who range in age from nine to sixty-nine, and is beautifully illustrated with images of animals (including humans), insects and landscapes.</p>
       <p>We have been including images of animals in our work for the last 25 years.  It’s such a preoccupation that it’s often the thread that curators and critics weave into their programming.  Sometimes we make them speak with human voices, and people ask us why.  The answer we used to give was that viewers were more willing to see animals as worthy of love, so could tolerate their confessions and abjection better than they could from people.  Now we are a bit more ambivalent about using animals explicitly as screens upon which we can project human foibles.  It’s part of a broader concern with understanding the mechanics and utility of empathy.  We question now who it serves and what it implies to confer agency upon an unknown other, to profess to empathize with it or them.</p>
       <p>Regardless of this ambivalence, we continue to make and devour images of animals unabated, but work to make it clear that the animal is being held up as a pocket-mirror to the human subject.</p>
@@ -165,8 +157,6 @@
       </blockquote>
       <br>
       <br>
-    </div>
-    <div class="col-sm">
     </div>
   </div>
 </div>
@@ -204,11 +194,9 @@
 
 <a class="btt" href="#"><i class="fa fa-arrow-circle-up"></i></a>
 
-<script type="text/javascript">
-  const lightbox = GLightbox({
-    openEffect: 'zoom',
-    closeEffect: 'fade',
-  });
+<script src="../js/app.js"></script>
+<script>
+  create_gallery("#carousel-example");
 </script>
 
 </body>

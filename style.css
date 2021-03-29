@@ -474,20 +474,21 @@ blockquote cite:before {
   caption-side: bottom;
   padding: 3px;
 }
-.figure img:hover {
+/* .figure img:hover {
   cursor: pointer;
-}
+} */
 
 .figure:hover::after{
   content: '';
   position: absolute;
-  left: 40%;
+  left: 0;
   top: 0;
-  bottom: 80%;
+  bottom: 0;
   width: 100%;
-  background: url('../img/expand.png') center no-repeat;
+  background: url('../img/expand2.png') center no-repeat;
   background-size: 80px;
   opacity: 0.5;
+  cursor: pointer;
 }
 
 .carousel-caption {
@@ -545,18 +546,18 @@ blockquote cite:before {
   /* background: no-repeat 50%/100% 100%; */
 }
 
-/* .carousel-item:hover:after {
+.carousel-item:hover::after{
   content: '';
   position: absolute;
   left: 0;
   top: 0;
   bottom: 0;
   width: 100%;
-  background: url('../img/expand.png') center no-repeat;
+  background: url('../img/expand2.png') center no-repeat;
   background-size: 80px;
   opacity: 0.5;
   cursor: pointer;
-} */
+}
 
 /* ---------------------------------------------------------------- */
 /* LIST OF ESSAYS ------------------------------------------------- */

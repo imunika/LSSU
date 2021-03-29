@@ -211,40 +211,6 @@
 <a class="btt" href="#"><i class="fa fa-arrow-circle-up"></i></a>
 
 <script type="text/javascript">
- 
-  // const myGallery = GLightbox({
-  //   openEffect: 'zoom',
-  //   closeEffect: 'fade',
-  //   elements: [
-  //       {
-  //           'href': '../img/essay/SaschaScott_HawaiianPineapple.jpg',
-  //           'type': 'image',
-  //           'title': '',
-  //           'description': 'Fig. 1. Hawaiian Pineapple Company advertisement, <em>The Saturday Evening Post</em>, April 13, 1940.',
-  //       },
-  //       {
-  //           'href': '../img/essay/SaschaScott_ChollaCactus.jpg',
-  //           'type': 'image',
-  //           'title': '',
-  //           'description': 'Fig. 2. Photograph of flowering Cholla Cactus along the Santa Fe Rail Trail.',
-  //       },
-  //       {
-  //           'href': '../img/essay/SaschaScott_JimsonWeed.jpg',
-  //           'type': 'image',
-  //           'title': '',
-  //           'description': 'Fig. 3. Georgia O’Keeffe, <em>Jimson Weed</em>, 1936. This painting was created on commission by cometic tycoon Elizabeth Arden and was hung in the new Arden Sports Salon in New York.',
-  //       },
-  //       {
-  //           'href': '../img/essay/SaschaScott_YellowCactusFlower.jpg',
-  //           'type': 'image',
-  //           'title': '',
-  //           'description': 'Fig. 4. Georgia O’Keeffe, <em>Yellow Cactus Flower</em>, 1929.',
-  //       }
-  //   ],
-  // });
-  // $("#thegallery1").click(() => myGallery.open());
-  // $("#thegallery1").siblings("figcaption").hide().html(() => myGallery.elements[0]['description']).fadeIn();$("#thegallery2").click(() => myGallery.open());
-  
   
   const myGallery1 = GLightbox({
     openEffect: 'zoom',
@@ -258,7 +224,7 @@
         }
     ],
   });
-  $("#thegallery1").click(() => myGallery1.open());
+  $("#thegallery1").parent().click(() => myGallery1.open());
   $("#thegallery1").siblings("figcaption").hide().html(() => myGallery1.elements[0]['description']).fadeIn();
 
   const myGallery2 = GLightbox({
@@ -273,7 +239,7 @@
         }
     ],
   });
-  $("#thegallery2").click(() => myGallery2.open());
+  $("#thegallery2").parent().click(() => myGallery2.open());
   $("#thegallery2").siblings("figcaption").hide().html(() => myGallery2.elements[0]['description']).fadeIn();
 
   const myGallery3 = GLightbox({
@@ -288,7 +254,7 @@
         }
     ],
   });
-  $("#thegallery3").click(() => myGallery3.open());
+  $("#thegallery3").parent().click(() => myGallery3.open());
   $("#thegallery3").siblings("figcaption").hide().html(() => myGallery3.elements[0]['description']).fadeIn();
 
   const myGallery4 = GLightbox({
@@ -303,7 +269,7 @@
         }
     ],
   });
-  $("#thegallery4").click(() => myGallery4.open());
+  $("#thegallery4").parent().click(() => myGallery4.open());
   $("#thegallery4").siblings("figcaption").hide().html(() => myGallery4.elements[0]['description']).fadeIn();
   
 </script>

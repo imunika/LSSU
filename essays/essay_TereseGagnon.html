@@ -68,9 +68,7 @@
 
 <div class="container mt-4 essay">
   <div class="row">
-    <div class="col-sm">
-    </div>
-    <div class="col-sm-9">
+    <div class="col-sm-9 mx-auto">
       <h1 class="essay-title my-4">Tendrils Eat the World Anew</h1>
       <div class="container">
         <div class="row">
@@ -88,8 +86,6 @@
         </div>
       </div>
       <hr class="title">
-    </div>  
-    <div class="col-sm">
     </div>
   </div>
 </div>
@@ -107,9 +103,7 @@
 
 <div class="container mt-4 essay">
   <div class="row">
-    <div class="col-sm">
-    </div>
-    <div class="col-sm-9">
+    <div class="col-sm-9 mx-auto">
       
       <p><h6>Tendrils Eat the World Anew</h6></p>
       
@@ -217,8 +211,6 @@
       <p>In particular, the Karen women I first became friends with in Georgia, and who I am still close with, happened to have a great affinity for gardening and readily shared with me stories of their lives both in Burma and in the refugee camp where they had lived for several years, as well as the landscapes of escape in-between. Though these stories encompassed many aspects of their lives, they were often narrated through the language of food and plants. These two poems reflect my emotions and meditations on these shared experiences—colored, as they are by my study of the political, social and affective dimensions of people moving with their plants and agricultural practices, and the transnational landscapes of connection they constitute.</p>
       <br>
       <br>
-  </div>
-    <div class="col-sm">
     </div>
   </div>
 </div>
@@ -270,7 +262,7 @@
         }
     ],
   });
-  $("#thegallery").click(() => myGallery.open());
+  $("#thegallery").parent().click(() => myGallery.open());
   $("#thegallery").siblings("figcaption").hide().html(() => myGallery.elements[0]['description']).fadeIn();
   
 </script>

@@ -177,7 +177,7 @@
         }
     ],
   });
-  $("#thegallery").click(() => myGallery.open());
+  $("#thegallery").parent().click(() => myGallery.open());
   $("#thegallery").siblings("figcaption").hide().html(() => myGallery.elements[0]['description']).fadeIn();
   
 </script>
