@@ -489,6 +489,7 @@ blockquote cite:before {
   background-size: 80px;
   opacity: 0.5;
   cursor: pointer;
+  pointer-events: none;
 }
 
 .carousel-caption {
