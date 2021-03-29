@@ -93,10 +93,10 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-9 mt-4 mx-auto">
-        <figure class="figure">
-          <img id="thegallery" class="figure-img img-fluid" src="../img/essay/SheridanBishoff_FloralStillLife.jpg" alt="image">
-          <figcaption class="figure-caption"></figcaption>
-        </figure>
+      <figure class="figure">
+        <img id="thegallery" class="figure-img img-fluid" src="../img/essay/SheridanBishoff_FloralStillLife.jpg" alt="image">
+        <figcaption class="figure-caption"></figcaption>
+      </figure>
     </div>
   </div>
 </div>
@@ -171,7 +171,7 @@
         }
     ],
   });
-  $("#thegallery").parent().click(() => myGallery.open());
+  $("#thegallery").click(() => myGallery.open());
   $("#thegallery").siblings("figcaption").hide().html(() => myGallery.elements[0]['description']).fadeIn();
   
 </script>
