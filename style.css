@@ -813,3 +813,21 @@ Authors Section
   bottom: 15px;
   right: 15px;
 } */
+
+
+.lg-actions .lg-next:before, .lg-actions .lg-prev:after {
+  content: none;
+}
+
+.lg-sub-html {
+  background-color: #fff;
+  bottom: 0;
+  color: #000;
+  font-size: 11px;
+  left: 0;
+  padding: 20px 40px;
+  position: fixed;
+  right: 0;
+  text-align: left;
+  z-index: 1080;
+}
