@@ -736,6 +736,12 @@ blockquote cite:before {
 }
 
 
+@media (max-width: 576px) {
+  .jumbotron-title {
+    font-size: 60px;
+  }
+}
+
 @media (min-width: 576px) {
   .jumbotron {
     padding: 2rem;
