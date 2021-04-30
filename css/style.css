@@ -103,12 +103,13 @@ html {
 
 /* color for navbar menu when bar background is light (e.g., folders in essays, authors, talks) */
 .navbar-light .navbar-nav .nav-link {
-  color:rgb(40, 40, 40);
+  /* color:rgb(90, 90, 90); */
+  color: #5d6160;
   font-size: 15px;
 }
 .navbar-light .navbar-nav .nav-link:focus, .navbar-nav .nav-link:hover {    
   color: black;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 
@@ -221,6 +222,11 @@ a.anylink:hover {
   cursor: pointer;
 }
 
+.faq .faq-list a.anylink2 {
+  font-size: 17px;
+  display: inline;
+}
+
 a.anylink2:hover {
   color: #d44500;
   cursor: pointer;
@@ -322,7 +328,7 @@ h5.card-title {
 .card p {
   font-family: warnock-pro-display, serif;
   font-weight: 300;
-  font-size: 15px;
+  font-size: 16px;
   /* letter-spacing: 0.494px;
     line-height: 17.94px; */
 }
@@ -368,7 +374,8 @@ hr.title {
 }
 
 hr.end {
-  border-top: 1px solid #d44500;
+  /* border-top: 1px solid #d44500; */
+  border-top: 1px solid#e2aa8e;
 }
 
 .essay p {
@@ -385,12 +392,6 @@ hr.end {
 p.by-author {
   font-family: muli, "Raleway", sans-serif;
   font-size: 14px;
-}
-
-p.biography {
-  font-family: "Crimson Text", serif;
-  font-size: 18px;
-  line-height: 24px;
 }
 
 p.essays,
@@ -710,9 +711,10 @@ blockquote cite:before {
 
 .div1 {
 
-  background-color: #fef8f5;
-  /* padding-top: 1%;
-  padding-bottom: 1%; */
+  /* background-color: #fef8f5; */
+  background-color: #f8f8f8;
+  padding-top: 3%;
+  padding-bottom: 2%;
 
 
   /* background-color: #fabf9a;
@@ -738,7 +740,11 @@ blockquote cite:before {
 
 @media (max-width: 576px) {
   .jumbotron-title {
-    font-size: 60px;
+    font-size: 62px;
+  }
+  .jumbotron-subtitle {
+    font-family: kepler-std-display;
+    font-size: 40px;
   }
 }
 
@@ -1089,6 +1095,17 @@ Works Section
   display: none;
 }
 
+/* Style for author or speaker name */
+.author-speaker {
+  font-family: muli;
+  font-size: 15px;
+}
+
+.faq .faq-list .author-speaker a {
+  font-family: muli;
+  font-size: 15px;
+}
+
 .fa-times:before {
   content: "\f00d";
   color: #D44500;
@@ -1100,13 +1117,26 @@ Works Section
   color: #D44500;
 }
 
-/* short description essay section */
+/* short description essays section */
 p.descrp {
   font-family: warnock-pro-display, "Crimson Text", serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 25px;
   /* letter-spacing: 0.5px; */
+}
+
+p.about {
+  font-family: warnock-pro-display, "Crimson Text", serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+p.biography {
+  font-family: warnock-pro-display, "Crimson Text", serif;
+  font-size: 17px;
+  line-height: 25px;
 }
 
 /* READ MORE link essay section */
@@ -1117,4 +1147,51 @@ p.descrp {
   text-decoration-thickness: 0.75px;
   text-underline-offset: 2.5px;
   text-decoration-color: #e2aa8e; 
+}
+
+/* SEARCH */
+
+.navbar-dark .form-control {
+  border-color: antiquewhite;
+  border-width: 0 0 1px;
+}
+
+.navbar-dark .form-control-sm, .navbar-dark .form-control-sm:focus {
+  border-radius: 0px;    
+}
+
+.navbar-dark .form-control, .navbar-dark .form-control:focus {
+  background-color: transparent;
+  border-radius: 0px;
+  color: antiquewhite;
+}
+
+.navbar-dark .form-control::-webkit-input-placeholder{
+  color:rgb(221, 207, 188);
+}
+.navbar-dark .form-control:-moz-placeholder, .navbar-dark .form-control:-moz-placeholder:focus {
+    color:antiquewhite;
+}
+
+
+.navbar-light .form-control {
+  border-color: #9e9e9e;
+  border-width: 0 0 1px;
+}
+
+.navbar-light .form-control-sm, .navbar-light .form-control-sm:focus {
+  border-radius: 0px;    
+}
+
+.navbar-light .form-control, .navbar-light .form-control:focus {
+  background-color: transparent;
+  border-radius: 0px;
+  color: #9e9e9e;
+}
+
+.navbar-light .form-control::-webkit-input-placeholder{
+  color:#bdbdbd;
+}
+.navbar-light .form-control:-moz-placeholder, .navbar-light .form-control:-moz-placeholder:focus {
+    color:#9e9e9e;
 }
