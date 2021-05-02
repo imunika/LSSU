@@ -22,6 +22,9 @@
   <!-- Piazzolla & Source Serif Pro font-->
   <link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@100;200;300;400&family=Source+Serif+Pro:wght@200;300;400&display=swap" rel="stylesheet">
 
+  <!-- Stork -->
+  <link rel="stylesheet" href="https://files.stork-search.net/basic.css" />
+
   <!-- My CSS -->
   <link rel="stylesheet" href="../css/style.css">
 
@@ -45,7 +48,7 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent" style="height:50px">
-    <img id="logomenu" class="navbar-brand mr-auto" src="img/LS_logo4b.png" style="width:50px;height:50px;display:none;">
+
     <ul class="navbar-nav mx-auto abs-center-x">
         <li class="nav-item">
           <a class="nav-link" href="../essays.html">ESSAYS</a>
@@ -60,12 +63,10 @@
           <a class="nav-link" href="../about.html">ABOUT</a>
         </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0 ml-auto">
+    <form class="form-inline my-2 my-lg-0 ml-auto" autocomplete="off">
       <div class="input-group">
-        <input class="form-control mr-sm-1 form-control-sm" type="search" placeholder="search ..." aria-label="Search">
-        <button class="btn btn-outline-success mt-1 my-sm-0 btn-sm" type="submit" style="display: inline-block; position: absolute; right: 0; top: 0; padding-left: 18px; padding-top: 0; z-index: 2;">
-          <img src="../img/search_b.png" height="15">
-        </button>
+        <input id="search" data-stork="landscapes" class="stork-input form-control mr-sm-1 form-control-sm" type="search" placeholder="" aria-label="Search">
+        <div data-stork="landscapes-output" class="stork-output"></div>
       </div>
     </form>
   </div>
@@ -290,6 +291,9 @@
   $("#thegallery4").siblings("figcaption").hide().html(() => myGallery4.elements[0]['description']).fadeIn();
   
 </script>
+
+<script src="https://files.stork-search.net/stork.js"></script>
+<script src="../js/search.js"></script>
 
 </body>
 </html>

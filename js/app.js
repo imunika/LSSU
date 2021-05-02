@@ -27,5 +27,5 @@ $(document).ready(() => {
   $(".author-block a.anylink").hover(
     (e) => $(e.target).parent().children("img").css('filter', 'unset'), 
     (e) => $(e.target).parent().children("img").css('filter', 'sepia(0.5) grayscale(1)')
-  );
+  );  
 });
