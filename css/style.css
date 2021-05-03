@@ -156,31 +156,18 @@ html {
 }
 
 /* back to top button */
-.btt {
-  display: none;
-  background: #d445004a;
-  width: 50px;
+.back-to-top {
   position: fixed;
-  right: -12px;
-  bottom: 10px;
-  z-index: 9998;
-  border: 1px solid #fff;
-  border-radius: 10px;
-}
-
-.btt:hover {
-  background: #d44500;
-  box-shadow: 5px 10px 25px #555;
-}
-
-.btt i {
-  color: #ffffff4a;
-  font-size: 25px;
-  padding: 7px;
-}
-
-.btt i:hover {
+  display: none;
+  background: #8a8074;
   color: #fff;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50px;
+  right: 15px;
+  bottom: 15px;
+  transition: background 0.5s ease-in-out;
 }
 
 /* Social Icons color */
