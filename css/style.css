@@ -183,6 +183,7 @@ html {
   color: #fff;
 }
 
+/* Social Icons color */
 .icon {
   font-size: 22px;
   color: #8a8074;
@@ -553,7 +554,7 @@ blockquote cite:before {
 } */
 
 .figure-caption {
-  font-size: 11px;
+  font-size: 12px;
   color: rgb(102, 102, 102);
   display: table-caption;
   caption-side: bottom;
@@ -1062,6 +1063,13 @@ Works Section
   font-size: 15px;
 }
 
+p.card-subtitle {
+  margin-top: -.375rem;
+  margin-bottom: 0;
+  font-family: muli;
+  font-size: 14px;
+}
+
 .faq .faq-list .author-speaker a {
   font-family: muli;
   font-size: 15px;
@@ -1082,7 +1090,7 @@ Works Section
 p.descrp {
   font-family: warnock-pro-display, "Crimson Text", serif;
   font-weight: 300;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 25px;
   /* letter-spacing: 0.5px; */
 }
@@ -1102,8 +1110,8 @@ p.biography {
 
 /* READ MORE link essay section */
 .faq .faq-list a.readmore {
-  font-family: "Raleway";
-  font-size: 13px;
+  font-family: muli, "Raleway";
+  font-size: 15px;
   text-decoration-line: underline;
   text-decoration-thickness: 0.75px;
   text-underline-offset: 2.5px;
