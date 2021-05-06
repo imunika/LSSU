@@ -22,7 +22,7 @@ files = [
     {path = "essays/essay_MonicaQuinonesRivera2.html", url = "essays/essay_MonicaQuinonesRivera2.html", title = "Mónica Quiñones-Rivera | Roelandt Savery’s Birds and Beasts by a Stream (1636)", html_selector_override="div.container"},
     {path = "essays/essay_NehanNaim.html", url = "essays/essay_NehanNaim.html", title = "Nehan Naim | All Things Fish", html_selector_override="div.container"},
     {path = "essays/essay_RomitaRay.html", url = "essays/essay_RomitaRay.html", title = "Romita Ray | Taming the Tiger: Reflections on Big Cats and Tea Plantations", html_selector_override="div.container"},
-    {path = "essays/essay_SaschaScott.html", url = "essays/essay_essay_SaschaScott.html", title = "Sascha Scott | Colonization, Decolonization, and Representing Landscapes", html_selector_override="div.container"},
+    {path = "essays/essay_SaschaScott.html", url = "essays/essay_SaschaScott.html", title = "Sascha Scott | Colonization, Decolonization, and Representing Landscapes", html_selector_override="div.container"},
     {path = "essays/essay_SheridanBishoff.html", url = "essays/essay_SheridanBishoff.html", title = "Sheridan Bishoff | Imagined Nature", html_selector_override="div.container"},
     {path = "essays/essay_SusannahSayler_and_EdMorris.html", url = "essays/essay_SusannahSayler_and_EdMorris.html", title = "Susannah Sayler & Edward Morris | From Canaries to Tools: The Evolution of an Ecological Art Practice", html_selector_override="div.container"},
     {path = "essays/essay_TereseGagnon.html", url = "essays/essay_TereseGagnon.html", title = "Terese Gagnon | Tendrils Eat the World Anew", html_selector_override="div.container"},
