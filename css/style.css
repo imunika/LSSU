@@ -444,6 +444,16 @@ h1.essay-title {
   margin-left: 32px;
 }
 
+.tab4 {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.tab5 {
+  display: inline-block;
+  margin-left: 20px;
+}
+
 .blockpoem {
   font-family: warnock-pro-display, "Crimson Text", serif;
   font-weight: 300;
@@ -451,6 +461,27 @@ h1.essay-title {
   line-height: 15px;
   /* margin-left: 50px; */
 }
+
+/* styling options for the poem's columns */
+.column {
+  float: left;
+  }
+
+/* Set width length for the left, and right columns */
+.left {
+width: 10%;
+}
+
+.right {
+width: 90%;
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
 /* End Teresa's poems */
 
 a.by-author {
